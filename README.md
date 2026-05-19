@@ -129,4 +129,4 @@ QAELUM does not provide investment advice and is not registered as an investment
 
 ---
 
-*Last updated: November 2025*
+*Last updated: may 2026*
