@@ -1,3 +1,32 @@
+PHASE 1 ROADMAP NOTICE
+ *
+ *   This contract is the hardened V3 base. Phase 1 post-funding work includes:
+ *
+ *   - Private relay fan-out routing (Flashbots Protect, MEV Blocker,
+ *     BuilderNet, direct builder access)
+ *   - Revert-protected bundle templates with embedded profit assertions
+ *   - Multi-builder submission logic with bundle deduplication
+ *   - Chain-specific execution paths optimised for Tron, Base, and Polygon
+ *   - Circuit breakers (per-bundle, per-pair, global) for operational
+ *     risk containment
+ *   - Mempool obfuscation via executor address rotation
+ *
+ *   Phase 1 chain priority: Tron, Base, Polygon PoS â€” chains where
+ *   institutional MEV competition is structurally weaker and revert-
+ *   protected execution is favourable. Secondary corridors: Arbitrum,
+ *   Optimism.
+ *
+ *   Phase 1 algorithm baseline: Moore-Bellman-Ford with line-graph
+ *   augmentation as the production path finder, with SQBM as second-
+ *   stage multi-objective optimiser where graph complexity justifies it.
+ *
+ *   Phase 1 audit: External audit by Spearbit (competitive) and Code4rena
+ *   (public contest) before mainnet deployment. Audit completion is a
+ *   hard precondition for mainnet.
+ *
+ *   See STRATEGY.md at the repository root for full engineering direction.
+ *
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
